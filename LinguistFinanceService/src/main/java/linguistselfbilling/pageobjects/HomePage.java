@@ -1,6 +1,7 @@
 package linguistselfbilling.pageobjects;
 
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,25 +20,18 @@ public HomePage(WebDriver driver){
 	PageFactory.initElements(driver, this);	
 }
 
-@FindBy(id ="filter_forms_client_text_search")
-WebElement ClientSearchFilter;
-@FindBy(css ="input[value='Apply']")
-WebElement Filter;
-@FindBy(xpath="//a[normalize-space()='Linguists']")
-WebElement LinguistsTab;
-@FindBy(xpath ="//div[@class='bs-old-docs bg-success text-success']")
-WebElement text;
-@FindBy(xpath="//a[normalize-space()='Finance']")
-WebElement FinanceTab;
 By clientserach = By.id("filter_forms_client_text_search");
 public void FilterClient(String clientname) 
 {   
 	
 	waitForElementToApper(clientserach);
-	ClientSearchFilter.click();
-	ClientSearchFilter.sendKeys(clientname);
-	Filter.click();
-}
 }
 
+public void Alethandle() 
+{
+Alert  alert = driver.switchTo().alert();
+alert.accept();
+	
+}
 
+}

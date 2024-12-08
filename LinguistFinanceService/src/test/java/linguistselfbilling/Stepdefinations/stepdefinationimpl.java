@@ -21,7 +21,7 @@ public class stepdefinationimpl extends BaseTest{
  
 	 public void signin_page_credetilas(String name , String Password)
 	  {
-		Loginpage.LoginAsStaffUser(name,Password);
+		Loginpage.LoginAsAdmin(name,Password);
 
 
  }

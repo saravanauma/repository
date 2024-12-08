@@ -70,13 +70,13 @@ public class BaseTest {
 	{
 		driver = intializedriver();
 		Loginpage = new LoginPage(driver);
-		Loginpage.goTo("https://prestaging.link.dals.co.uk/");
+		Loginpage.goTo("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		
         return Loginpage;
 	}
 	@AfterMethod
 	public void closeBrowser()
 	{
-		driver.close();
+		//driver.close();
 	}
 		}

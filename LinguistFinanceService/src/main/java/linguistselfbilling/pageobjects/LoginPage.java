@@ -19,34 +19,21 @@ public LoginPage(WebDriver driver){
 	PageFactory.initElements(driver, this);
 	
 }
-@FindBy(linkText="SINGLE SIGN ON")
-WebElement UseSingleSignOn;
 
-@FindBy(css="#staff_email_id")
-WebElement Validatethemail;
+@FindBy(name ="username")
+WebElement Username;
 
-@FindBy(css = "#staff_non_sso_login")
-WebElement NonSSOpageLink;
+@FindBy(name="password")
+WebElement Password;
 
-@FindBy(id="userEmail")
-WebElement useremail ;
-
-@FindBy(id="staff_password")
-WebElement Passwordele;
-
-@FindBy(id="kt_sign_in_submit")
-WebElement Signin;
-
-@FindBy(id="jk")
-WebElement hcapthca;
+@FindBy(css="button[type=\"submit\"]")
+WebElement Submit;
 
 
-public void LoginAsStaffUser(String email, String password) {
-	UseSingleSignOn.click();
-	Validatethemail.sendKeys(email);
-	NonSSOpageLink.click();
-	Passwordele.sendKeys(password);
-	Signin.click();
+public void LoginAsAdmin(String email, String password) {
+	Username.sendKeys(email);
+	Password.sendKeys(password);
+	Submit.click();
 
 }
 public void goTo(String URL) {

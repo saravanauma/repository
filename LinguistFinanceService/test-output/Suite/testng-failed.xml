@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="linguistselfbilling.Test.StaffLoginTest">
+      <class name="linguistselfbilling.Test.Adminlogin">
         <methods>
-          <include name="closeBrowser"/>
           <include name="StaffloginTest" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
           <include name="launchapplication"/>
         </methods>
-      </class> <!-- linguistselfbilling.Test.StaffLoginTest -->
+      </class> <!-- linguistselfbilling.Test.Adminlogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [suite] -->

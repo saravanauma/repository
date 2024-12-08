@@ -5,24 +5,24 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import linguistselfbilling.TestComponents.BaseTest;
-import linguistselfbilling.pageobjects.HomePage;
 
 
 
 //import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class StaffLoginTest extends BaseTest{
+public class Adminlogin extends BaseTest{
 	
 	@Test(dataProvider="Data")
 	public void StaffloginTest(HashMap <String, String> input) throws IOException {
-		Loginpage.LoginAsStaffUser(input.get("email"), input.get("Password"));
-	   HomePage homepage = new HomePage(driver);
-    	//homepage.NavigateToClientlistPage();
-	//	homepage.FilterClient("Client");
+		Loginpage.LoginAsAdmin(input.get("email"), input.get("Password"));
+		Alert  alert = driver.switchTo().alert();
+		alert.accept();
+
 			}			
 	@DataProvider
 	public Object[][] Data() throws IOException

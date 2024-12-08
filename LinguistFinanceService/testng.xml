@@ -6,7 +6,7 @@
 	</listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="linguistselfbilling.Test.StaffLoginTest"/>
+      <class name="linguistselfbilling.Test.Adminlogin"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
