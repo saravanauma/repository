@@ -2,11 +2,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="suite">
 	<listeners>
-				<listener class-name ="linguistselfbilling.TestComponents.Listeners"/>
+				<listener class-name ="sampleproject.TestComponents.Listeners"/>
 	</listeners>
-  <test thread-count="5" name="Test">
+  <test name="Test">
     <classes>
-      <class name="linguistselfbilling.Test.Adminlogin"/>
+      <class name="sampleproject.Test.Adminlogin"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

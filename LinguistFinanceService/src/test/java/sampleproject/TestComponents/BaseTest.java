@@ -15,7 +15,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -30,7 +32,7 @@ public class BaseTest {
 	public WebDriver intializedriver() throws IOException {
 		
 	Properties prop = new Properties();
-	FileInputStream files = new FileInputStream(System.getProperty("user.dir")+"//src//main//java//linguistselfbilling//resources//GlobalData.properties");
+	FileInputStream files = new FileInputStream(System.getProperty("user.dir")+"//src//main//java//sampleproject//resources//GlobalData.properties");
 	prop.load(files);
 	String browsername = prop.getProperty("browser");
 	if (browsername.equalsIgnoreCase("chrome"))
@@ -65,18 +67,17 @@ public class BaseTest {
 			FileUtils.copyFile(source, file);
 			return System.getProperty("user.dir")+"//reports//"+ testCaseName + ".png";
 	}
-	@BeforeMethod
+	@BeforeTest
 	public LoginPage launchapplication() throws IOException
 	{
 		driver = intializedriver();
 		Loginpage = new LoginPage(driver);
-		Loginpage.goTo("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-		
-        return Loginpage;
+		Loginpage.goTo("https://prestaging.auth.dals.co.uk/staffs/login?app_id=11b31fd5-92f8-4927-b90f-abfc95291c60&login_by=staff&sso=false");
+	return Loginpage;
 	}
-	@AfterMethod
+	@AfterTest
 	public void closeBrowser()
 	{
-		//driver.close();
+		driver.close();
 	}
 		}

@@ -3,6 +3,7 @@ package sampleproject.pageobjects;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,6 +14,7 @@ import sampleproject.Abstract.AbstractComments;
 public class HomePage extends AbstractComments {
 	
 	WebDriver driver;	
+	public JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 
 public HomePage(WebDriver driver){
 	super(driver);
