@@ -33,6 +33,8 @@ public void LoginAsAdmin(String email, String password) {
 	Username.sendKeys(email);
 	Password.sendKeys(password);
 	Submit.click();
+	Submit.click();
+	Submit.click();
 
 }
 public void goTo(String URL) {
