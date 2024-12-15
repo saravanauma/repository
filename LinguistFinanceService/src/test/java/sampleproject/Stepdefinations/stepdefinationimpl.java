@@ -1,12 +1,12 @@
-package linguistselfbilling.Stepdefinations;
+package sampleproject.Stepdefinations;
 
 import java.io.IOException;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import linguistselfbilling.TestComponents.BaseTest;
-import linguistselfbilling.pageobjects.LoginPage;
+import sampleproject.TestComponents.BaseTest;
+import sampleproject.pageobjects.LoginPage;
 
 public class stepdefinationimpl extends BaseTest{
  public LoginPage landingpage;
