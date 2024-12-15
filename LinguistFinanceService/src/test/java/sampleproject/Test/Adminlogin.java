@@ -1,4 +1,4 @@
-package linguistselfbilling.Test;
+package sampleproject.Test;
 
 
 import java.io.IOException;
@@ -9,7 +9,7 @@ import org.openqa.selenium.Alert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import linguistselfbilling.TestComponents.BaseTest;
+import sampleproject.TestComponents.BaseTest;
 
 
 

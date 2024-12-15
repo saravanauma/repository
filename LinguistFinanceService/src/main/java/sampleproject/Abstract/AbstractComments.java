@@ -1,4 +1,4 @@
-package linguistselfbilling.Abstract;
+package sampleproject.Abstract;
 
 import java.time.Duration;
 

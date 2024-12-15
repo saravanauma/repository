@@ -1,4 +1,4 @@
-package linguistselfbilling.TestComponents;
+package sampleproject.TestComponents;
 
 import java.io.IOException;
 
@@ -11,7 +11,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-import linguistselfbilling.resources.ExtentReporterNG;
+import sampleproject.resources.ExtentReporterNG;
 
 
 public class Listeners extends BaseTest implements ITestListener{

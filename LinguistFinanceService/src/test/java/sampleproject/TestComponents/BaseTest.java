@@ -1,4 +1,4 @@
-package linguistselfbilling.TestComponents;
+package sampleproject.TestComponents;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -20,7 +20,7 @@ import org.testng.annotations.BeforeMethod;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import linguistselfbilling.pageobjects.LoginPage;
+import sampleproject.pageobjects.LoginPage;
 
 
 public class BaseTest {

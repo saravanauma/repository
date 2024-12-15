@@ -1,4 +1,4 @@
-package linguistselfbilling.pageobjects;
+package sampleproject.pageobjects;
 
 
 import org.openqa.selenium.Alert;
@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import linguistselfbilling.Abstract.AbstractComments;
+import sampleproject.Abstract.AbstractComments;
 
 public class HomePage extends AbstractComments {
 	
