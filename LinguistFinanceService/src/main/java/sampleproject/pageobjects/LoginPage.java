@@ -19,26 +19,23 @@ public LoginPage(WebDriver driver){
 	
 }
 
-@FindBy(name ="username")
+@FindBy(name ="staff[email]")
 WebElement Username;
 
-@FindBy(name="password")
+@FindBy(name="staff[password]")
 WebElement Password;
 
-@FindBy(css="button[type=\"submit\"]")
-WebElement Submit;
+@FindBy(name ="commit")
+WebElement Signin;
 
 
 public void LoginAsAdmin(String email, String password) {
 	Username.sendKeys(email);
 	Password.sendKeys(password);
-	Submit.click();
-	Submit.click();
-	Submit.click();
-
+	Signin.click();
 }
-public void goTo(String URL) {
-driver.get(URL);	
+ public void goTo(String URL) {
+ driver.get(URL);	
 }
 }
 
