@@ -25,6 +25,7 @@ public void FilterClient(String clientname)
 {   
 	
 	waitForElementToApper(clientserach);
+	waitForElementToApper(clientserach);
 }
 
 public void Alethandle() 
