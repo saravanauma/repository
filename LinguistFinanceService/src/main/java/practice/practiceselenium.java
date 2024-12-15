@@ -13,6 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -37,6 +38,12 @@ WebElement	element= driver.findElement(By.name(null));
 	
     Actions actions = new Actions(driver);
 	actions.moveToElement(element).click().perform();
+	actions.clickAndHold(element);
+	
+	Select drop = new Select(element);
+	drop.selectByValue("34");
+	
+	
 	
 
 	
