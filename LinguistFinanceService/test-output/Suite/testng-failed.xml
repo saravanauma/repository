@@ -9,8 +9,8 @@
       <class name="sampleproject.Test.Adminlogin">
         <methods>
           <include name="StaffloginTest"/>
-          <include name="launchapplication"/>
           <include name="closeBrowser"/>
+          <include name="launchapplication"/>
           <include name="fillform"/>
         </methods>
       </class> <!-- sampleproject.Test.Adminlogin -->
