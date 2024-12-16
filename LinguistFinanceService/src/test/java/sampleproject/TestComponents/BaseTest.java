@@ -28,6 +28,7 @@ import sampleproject.pageobjects.LoginPage;
 public class BaseTest {
 	public WebDriver driver;
 	public LoginPage Loginpage;
+    VideoRecorder videoRecorder;
 
 	public WebDriver intializedriver() throws IOException {
 		
@@ -68,16 +69,21 @@ public class BaseTest {
 			return System.getProperty("user.dir")+"//reports//"+ testCaseName + ".png";
 	}
 	@BeforeTest
-	public LoginPage launchapplication() throws IOException
+	public LoginPage launchapplication() throws Exception
 	{
+        //videoRecorder = new VideoRecorder();
+        //videoRecorder.startRecording("TestExecution");
+
 		driver = intializedriver();
 		Loginpage = new LoginPage(driver);
 		Loginpage.goTo("https://prestaging.auth.dals.co.uk/staffs/login?app_id=11b31fd5-92f8-4927-b90f-abfc95291c60&login_by=staff&sso=false");
 	return Loginpage;
 	}
 	@AfterTest
-	public void closeBrowser()
+	public void closeBrowser() throws Exception
 	{
+       // videoRecorder.stopRecording();
+
 		driver.close();
 	}
 		}

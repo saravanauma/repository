@@ -1,7 +1,5 @@
 package sampleproject.Stepdefinations;
 
-import java.io.IOException;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -11,7 +9,7 @@ import sampleproject.pageobjects.LoginPage;
 public class stepdefinationimpl extends BaseTest{
  public LoginPage landingpage;
  @Given ("Launch the application")
- public void Launch_the_application() throws IOException
+ public void Launch_the_application() throws Exception
 	 {
 	 landingpage =launchapplication();
 	 
