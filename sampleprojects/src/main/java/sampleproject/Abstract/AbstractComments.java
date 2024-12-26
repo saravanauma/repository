@@ -44,7 +44,8 @@ public class AbstractComments {
 	@FindBy(xpath="//a[normalize-space()='Finance']")
 	WebElement FinanceTab;
 	@FindBy(xpath="//a[normalize-space()='Finance']")
-	WebElement s;
+	WebElement s; 
+
 
 	
 
